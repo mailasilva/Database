@@ -39,7 +39,7 @@ CREATE TABLE Movie(
 	CONSTRAINT FK_Director_ID FOREIGN KEY(Director_ID) REFERENCES Director(Director_ID)
 );
 
--- ## Tabela Award
+-- ## Table Award
 CREATE TABLE Award(
 	Award_ID INT IDENTITY (1,1),
 	Award_Name VARCHAR(50) NOT NULL,
@@ -57,7 +57,7 @@ CREATE TABLE Participation(
 );
 
 
--- ## Tabela Movie Premiation
+-- ## Table Movie Premiation
 CREATE TABLE Premiation(
 	M_Movie_ID INT,
 	A_Award_ID INT,
