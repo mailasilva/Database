@@ -67,32 +67,6 @@ CREATE TABLE Premiation(
 	CONSTRAINT FK_Award_ID FOREIGN KEY(A_Award_ID) REFERENCES Award(Award_ID)
 );
 
-/*
-
---Identified two new relations with missing data so tables were not created
--- ## Table Actor_Premiation
-
-CREATE TABLE Actor_Premiation(
-	P_Actor_ID INT,
-	P_Award_ID INT,
-	Year INT NOT NULL,
-	CONSTRAINT PK_P_Actor_ID PRIMARY KEY (P_Actor_ID, A_Award_ID),
-	CONSTRAINT FOREIGN KEY (P_Actor_ID) REFERENCES Actor(Actor_ID),
-	CONSTRAINT FK_P_Award_IDFOREIGN KEY (A_Award_ID) REFERENCES Award (Award_ID) 
-)
-
-
--- ## Table Director_Premiation
-
-CREATE TABLE Director_Premiation(
-	PR_Director_ID INT,
-	PR_Award_ID INT,
-	Year INT NOT NULL,
-	CONSTRAINT PK_PR_Director_ID PRIMARY KEY (PR_Director_ID, PR_Award_ID),
-	CONSTRAINT FK_PR_Director_ID FOREIGN KEY (PR_Director_ID) REFERENCES Director(Director_ID),
-	CONSTRAINT FK_PR_Award_ID FOREIGN KEY (PR_Award_ID) REFERENCES Award (Award_ID) 
-)
-*/
 
 -- Step 3: Insert Values into tables 
 
